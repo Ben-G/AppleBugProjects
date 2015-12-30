@@ -1,6 +1,6 @@
 # Project Specific
 
-Meet/Meet/Clients/Auth/TwitterKeys.plist
+.DS_Store
 
 # Xcode
 #
@@ -26,7 +26,6 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
-*.xcscheme
 
 ## Obj-C/Swift specific
 *.hmap
@@ -43,8 +42,6 @@ xcuserdata
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
-Meet/Carthage/Checkouts
-Meet/Carthage/Build
 
 # fastlane
 #
