@@ -6,19 +6,17 @@
 //  Copyright © 2016 Benjamin Encz. All rights reserved.
 //
 
-import Foundation
-
-protocol Thing {}
-protocol AnotherThing: Thing {}
+protocol AnotherThing {}
 
 struct X: AnotherThing {}
 
 let a = [X(), X(), X()]
 
 func takesX(a: [X]) -> [AnotherThing] {
+    // Compilation of following line fails
     let anotherThings: [AnotherThing] = a as [AnotherThing]
-//  This works:
-//  let anotherThings: [AnotherThing] = a.map { $0 as AnotherThing }
+    //  This works:
+    //  let anotherThings: [AnotherThing] = a.map { $0 as AnotherThing }
 
     return anotherThings
 }
